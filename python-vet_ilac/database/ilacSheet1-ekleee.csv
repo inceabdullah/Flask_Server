@@ -1,0 +1,2 @@
+1, 2019-05-01 09:07:40, 2019-05-01 09:07:40, <iframe name=\"I1\" id=\"if1\" width=\"100%\" \r\n height=\"254\" style=\"visibility:visible\" \r\n src=\"http://127.0.0.1:5000/get_ilac?ilac=BAYTİCOL %1\"></iframe>, BAYTİCOL %16, , publish, open, open, , 24, , , 2019-05-01 09:07:40, 2019-05-01 09:07:40, , 0, , 0, post, , 0
+FROM wp_posts;

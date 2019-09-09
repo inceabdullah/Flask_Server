@@ -1,0 +1,49 @@
+<html>
+<head>
+<meta charset="utf-8">
+
+<link href="//code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" rel="Stylesheet"></link>
+<script src="//code.jquery.com/jquery-2.2.0.min.js"></script>
+<script src="//code.jquery.com/ui/1.10.2/jquery-ui.js" ></script>
+<script type="text/javascript">
+$(function() {
+    $("#autocomplete").autocomplete({
+        source:function(request, response) {
+            $.getJSON("autocomplete",{
+                q: request.term, // in flask, "q" will be the argument to look for using request.args
+            }, function(data) {
+                response(data.matching_results); // matching_results from jsonify
+            });
+        },
+        minLength: 2,
+        select: function(event, ui) {
+            console.log(ui.item.value); // not in your question, but might help later
+        }
+    });
+})
+
+
+
+</script>
+</head>
+<body>
+    <div>
+	<form action="get_ilac" method="GET" target="my_iframe">
+        <input name="ilac" type="text" id="autocomplete" class="form-control input-lg"/>
+        
+</form>
+
+<!-- when the form is submitted, the server response will appear in this iframe -->
+<iframe name="my_iframe" src="not_submitted_yet"></iframe>
+
+<br />
+
+Yasal Uyarı:
+
+<br />
+
+Bunlar yasal uyarılardır.
+
+    </div>
+</body>
+</html>
