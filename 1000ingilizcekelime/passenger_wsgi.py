@@ -1,0 +1,1 @@
+from appy import app as application
