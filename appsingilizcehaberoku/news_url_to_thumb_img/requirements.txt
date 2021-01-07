@@ -11,7 +11,7 @@ idna==2.8
 itsdangerous==1.1.0
 jieba3k==0.35.1
 Jinja2==2.10.1
-lxml==4.3.4
+lxml==4.6.2
 MarkupSafe==1.1.1
 mysql-connector-python==8.0.16
 newspaper3k==0.2.8
