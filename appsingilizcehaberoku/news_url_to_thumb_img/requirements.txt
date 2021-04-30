@@ -29,7 +29,7 @@ tinydb==3.13.0
 tinysegmenter==0.3
 tldextract==2.0.1
 tqdm==4.32.1
-urllib3==1.25.3
+urllib3==1.25.8
 Werkzeug==0.15.4
 python-resize-image==1.1.19
 
