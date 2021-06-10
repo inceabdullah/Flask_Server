@@ -15,7 +15,7 @@ lxml==4.6.3
 MarkupSafe==1.1.1
 mysql-connector-python==8.0.16
 newspaper3k==0.2.8
-nltk==3.4.3
+nltk==3.4.5
 Pillow==8.2.0
 python-dateutil==2.5.3
 pytz==2019.1
